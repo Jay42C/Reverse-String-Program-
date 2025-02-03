@@ -1,0 +1,1 @@
+This C++ program will reverse a string the user inputs. The program will display the characters in the given string in a reverse order. I will use a function called reverseString that returns ta string and takes a string as an argument. 
