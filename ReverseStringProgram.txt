@@ -1,0 +1,46 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+void reverseString(string a)
+{
+        int length = a.size();
+
+        if (length > 0 ){
+                cout << a[length -1];
+                reverseString (a.substr(0, length-1));
+                }
+}
+
+int main ()
+{
+        string a;
+        cout << "Please enter a word and I will give you the backwards version." << endl;
+        cin >> a;
+        cout << "The  reverse is:   ";
+        reverseString(a);
+        cout  << endl;
+        return 0;
+
+
+}
+
+/*
+
+[jchairez@hills ~]$ nano reverso.cpp
+[jchairez@hills ~]$ g++ reverso.cpp
+[jchairez@hills ~]$ ./a.out
+Please enter a word and I will give you the backwards version.
+taco
+The  reverse is:   cat
+[jchairez@hills ~]$ nano reverso.cpp
+[jchairez@hills ~]$ g++ reverso.cpp
+[jchairez@hills ~]$ ./a.out
+Please enter a word and I will give you the backwards version.
+meow
+The  reverse is:   oem
+
+
+*/
